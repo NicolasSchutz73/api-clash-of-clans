@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+html {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h2:first-letter {
+  text-transform: uppercase;
+}
+
+.strong {
+  font-weight: 500;
+}
+
+p {
+  font-size: 17px;
+}
+
+span {
+  font-size: 17px;
+}

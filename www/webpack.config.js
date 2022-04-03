@@ -21,6 +21,10 @@ config = {
                 loader: 'babel-loader',
             },
             {
+                test: /\.hbs$/,
+                loader: "handlebars-loader",
+            },
+            {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
@@ -41,6 +45,10 @@ config = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pokemon.html',
+            filename: 'pokemon.html'
         }),
         new ESLintPlugin({
             context: path.resolve(__dirname, 'src'),

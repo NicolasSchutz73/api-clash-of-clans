@@ -1,0 +1,21 @@
+.wrap-pokemon {
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      align-items: center;
+
+      .types {
+        .type-one, .type-two {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}

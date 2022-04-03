@@ -1,0 +1,27 @@
+<div class="about">
+    <h2>{{name}}</h2>
+    <div class="row">
+        <span>#{{id}}</span>
+
+        <div class="types">
+            <div class="type-one {{types.[0].type.name}}">
+                <p>{{types.[0].type.name}}</p>
+            </div>
+
+            {{#if types.[1]}}
+                <div class="type-two {{types.[1].type.name}}">
+                    <p>{{types.[1].type.name}}</p>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+
+    <p><span class="strong">Height</span> : {{height}} m</p>
+    <p><span class="strong">Weight</span> : {{weight}} kg</p>
+    <p><span class="strong">First abilitie</span> : {{abilities.[0].ability.name}}</p>
+    <p><span class="strong">Second abilitie</span> : {{abilities.[1].ability.name}}</p>
+</div>
+
+<div class="illustration">
+    <img src="{{sprites.other.dream_world.front_default}}" alt="{{name}}">
+</div>
